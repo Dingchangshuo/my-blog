@@ -18,15 +18,15 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下： 数据类型     占位符    描述int           %d      十进制整数int           %i 十进制整数（与 %d 类似）unsigned int  %u 无符号十进制整数int            %o 八进制整数int            %x 十六进制整数（小写字母）int %          %X">
+        <meta name="description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下： 数据类型             占位符        描述int                  %d         十进制整数int                  %i         十进制整数（与 %d 类似）unsigned int         %u         无符号十进制整数int">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“程序设计实验第二节所遇困处及解决”">
 <meta property="og:url" content="http://dingchangshuo.github.io/my-blog/2024/11/12/%E2%80%9C%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%9D/index.html">
 <meta property="og:site_name" content="冲寒">
-<meta property="og:description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下： 数据类型     占位符    描述int           %d      十进制整数int           %i 十进制整数（与 %d 类似）unsigned int  %u 无符号十进制整数int            %o 八进制整数int            %x 十六进制整数（小写字母）int %          %X">
+<meta property="og:description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下： 数据类型             占位符        描述int                  %d         十进制整数int                  %i         十进制整数（与 %d 类似）unsigned int         %u         无符号十进制整数int">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-12T08:59:38.000Z">
-<meta property="article:modified_time" content="2024-11-12T13:50:34.365Z">
+<meta property="article:modified_time" content="2024-11-12T14:35:33.132Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     
@@ -420,8 +420,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-12 21:50:34</span>
-            <span class="mobile">2024-11-12 21:50:34</span>
+            <span class="desktop">2024-11-12 22:35:33</span>
+            <span class="mobile">2024-11-12 22:35:33</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -449,15 +449,15 @@
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
             <h2 id="问题一：关于占位符的使用"><a href="#问题一：关于占位符的使用" class="headerlink" title="问题一：关于占位符的使用"></a>问题一：关于占位符的使用</h2><p>通常来讲，学习的占位符有如下：</p>
-<p>数据类型     占位符    描述<br>int           %d      十进制整数<br>int           %i 十进制整数（与 %d 类似）<br>unsigned int  %u 无符号十进制整数<br>int            %o 八进制整数<br>int            %x 十六进制整数（小写字母）<br>int %          %X 十六进制整数（大写字母）<br>float &#x2F; double %f 十进制浮点数<br>float &#x2F; double %e 科学计数法（小写 e）<br>float &#x2F; double %E 科学计数法（大写 E）<br>float &#x2F; double %g 自动选择 %f 或 %e<br>float &#x2F; double %G 自动选择 %f 或 %E<br>char         %c 单个字符<br>char <em>%s 字符串<br>void</em>         %p 指针地址（以十六进制表示）<br>int             %% 打印百分号 %</p>
+<p>数据类型             占位符        描述<br>int                  <code>%d</code>         十进制整数<br>int                  <code>%i</code>         十进制整数（与 %d 类似）<br>unsigned int         <code>%u</code>         无符号十进制整数<br>int                  <code>%o</code>         八进制整数<br>int                  <code>%x</code>         十六进制整数（小写字母）<br>int                  <code>%X</code>         十六进制整数（大写字母）<br>float &#x2F; double       <code>%f </code>        十进制浮点数<br>float &#x2F; double       <code>%e</code>         科学计数法（小写 e）<br>float &#x2F; double       <code>%E</code>         科学计数法（大写 E）<br>float &#x2F; double       <code>%g</code>         自动选择 %f 或 %e<br>float &#x2F; double       <code>%G</code>         自动选择 %f 或 %E<br>char                 <code>%c</code>         单个字符<br>char                 <code>%s</code>         字符串<br>void                 <code>%p</code>         指针地址（以十六进制表示）<br>int                  <code>%%</code>         打印百分号 %</p>
 <p>但是对于一些长整型，短整型等的占位符了解不够，故而造成诸多不便，因而总结如下：</p>
-<p>数据类型           占位符         描述<br>short int        %hd     短整型（十进制）<br>unsigned short int  %hu 无符号短整型<br>long int         %ld     长整型（十进制）<br>unsigned long int %lu     无符号长整型<br>long long int     %lld 长长整型<br>unsigned long long int %llu 无符号长长整型</p>
+<p>数据类型                占位符             描述<br>short int                <code>%hd </code>         短整型（十进制）<br>unsigned short int       <code>%hu</code>          无符号短整型<br>long int                 <code>%ld</code>          长整型（十进制）<br>unsigned long int        <code>%lu </code>         无符号长整型<br>long long int           <code> %lld</code>         长长整型<br>unsigned long long int  &#96;%llu &#96;&#96;            无符号长长整型</p>
 <p>但我们在输入代码的时候，有时候不想让浮点数输出那么多位，故而有了接下来的占位符的用法：</p>
-<p>占位符          描述         示例<br>%f        小数点后默认保留 6 位 123.456000<br>%.nf      小数点后保留 n 位 %.2f -&gt; 123.46<br>%e       科学计数法，保留 6 位小数（小写） 1.234560e+02<br>%E       科学计数法，保留 6 位小数（大写） 1.234560E+02<br>%g      根据数值大小自动选择        %f 或 %e 123.456 或 1.23e+02</p>
-<p>如果想要左对齐则：%-5d，右对齐如：%5d</p>
-<p>然后就是细节：<code>double</code>是lf，那<code>long double</code>该如何书写呢：<br>答案是<em>Lf，将l大写即可。</em></p>
+<p>占位符          描述                          示例<br><code>%f </code>       小数点后默认保留 6 位             123.456000<br><code>%.nf</code>      小数点后保留 n 位                 %.2f -&gt; 123.46<br><code>%e </code>      科学计数法，保留 6 位小数（小写）    1.234560e+02<br><code>%E</code>       科学计数法，保留 6 位小数（大写）    1.234560E+02<br><code>%g</code>      根据数值大小自动选择           <code>%f</code> 或 <code>%e</code> 123.456 或 1.23e+02</p>
+<p>如果想要左对齐则：<code>%-5d</code>，右对齐如：<code>%5d</code></p>
+<p>然后就是细节：<code>double</code>是<code>lf</code>，那<code>long double</code>该如何书写呢：<br>答案是*<code>Lf</code>，将l大写即可。*</p>
 <h2 id="问题二：关于定义"><a href="#问题二：关于定义" class="headerlink" title="问题二：关于定义"></a>问题二：关于定义</h2><p>如果你用了如下的语句：</p>
-<p><code>cscanf_s(&quot;%d&quot;,&amp;b);</code></p>
+<p><code>scanf_s(&quot;%d&quot;,&amp;b);</code></p>
 <p>那么你的b在定义的时候一定得是一个整形值，不能定义像char类型这样的，否则会造成一些错误。</p>
 <h2 id="问题三：关于复数的使用"><a href="#问题三：关于复数的使用" class="headerlink" title="问题三：关于复数的使用"></a>问题三：关于复数的使用</h2><p>复数是C99标准新加入的数学计算支持</p>
 <p><em>复数不允许的计算主要如下：<br>关系运算符，自增自减等。</em></p>
@@ -465,10 +465,10 @@
 <p><em>注意需要使用头文件<code>&lt;complex.h&gt;</code></em></p>
 <p>complex 可以用于替代_Complex</p>
 <p>举个例子:</p>
-<p><code>cdouble complex dc = 2.0 + 3.5 * I;</code></p>
+<p><code>double complex dc = 2.0 + 3.5 * I;</code></p>
 <p>其中I是表示i的（学过高中数学的都知道）</p>
 <p>如果想表示实部和虚部：<br>creal(b)返回值 b 的实部,cimag(b)则返回值 b 的虚部</p>
-<p>复数的转换规则如下：<br>！<a href="/images/complex.jpg">复数的转换规则</a></p>
+<p>复数的转换规则如下：<br>！<a href="source/images/complex.jpg">复数的转换规则</a></p>
 <p>当你的电脑编译器没有C99标准及之后的怎么办？<br>如果是win系统，可以使用它自带的复数：</p>
 <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;complex.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    _Dcomplex a = &#123; <span class="number">3.0</span>, <span class="number">4.0</span> &#125;;</span><br><span class="line">    _Dcomplex b = &#123; <span class="number">0.0</span>, <span class="number">0.0</span> &#125;;</span><br><span class="line"></span><br><span class="line">    b = _Cbuild(creal(a) + <span class="number">1.0</span>, cimag(a) + <span class="number">2.0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;b = %.2f + %.2fi\n&quot;</span>, creal(b), cimag(b));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
@@ -489,7 +489,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-11-12 21:50:34
+                    :</strong> 2024-11-12 22:35:33
             </li>
         
         <li>
