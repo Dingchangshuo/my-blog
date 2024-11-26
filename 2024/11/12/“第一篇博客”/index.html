@@ -26,7 +26,7 @@
 <meta property="og:description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下：    数据类型 占位符 描述    int %d 十进制整数   int %i 十进制整数（与 %d类似）   unsigned int %u 无符号十进制整数   int %o 八进制整数   int %x 十六进制整数（小写字母）   int %X 十六进制整数（大写字母）   float &#x2F; double %f  十进制浮点数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-12T08:59:38.000Z">
-<meta property="article:modified_time" content="2024-11-26T06:08:02.823Z">
+<meta property="article:modified_time" content="2024-11-26T06:12:31.530Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     
@@ -420,8 +420,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-26 14:08:02</span>
-            <span class="mobile">2024-11-26 14:08:02</span>
+            <span class="desktop">2024-11-26 14:12:31</span>
+            <span class="mobile">2024-11-26 14:12:31</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -534,9 +534,80 @@
 </tr>
 </tbody></table>
 <p>但是对于一些长整型，短整型等的占位符了解不够，故而造成诸多不便，因而总结如下：</p>
-<p>|数据类型|               | 占位符            | 描述|<br>|————-|——————|—————–|<br>|short int               |<code>%hd </code>|     短整型（十进制）|<br>|unsigned short int       |<code>%hu</code> |        无符号短整型|<br>|long int                |<code>%ld</code>|      长整型（十进制）|<br>|unsigned long int        |<code>%lu </code>|        无符号长整型|<br>|long long int           |<code> %lld</code>|         长长整型|<br>|unsigned long long int  |<code>%llu </code>|     无符号长长整型|</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>占位符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>short int</td>
+<td><code>%hd </code></td>
+<td>短整型（十进制）</td>
+</tr>
+<tr>
+<td>unsigned short int</td>
+<td><code>%hu</code></td>
+<td>无符号短整型</td>
+</tr>
+<tr>
+<td>long int</td>
+<td><code>%ld</code></td>
+<td>长整型（十进制）</td>
+</tr>
+<tr>
+<td>unsigned long int</td>
+<td><code>%lu </code></td>
+<td>无符号长整型</td>
+</tr>
+<tr>
+<td>long long int</td>
+<td><code> %lld</code></td>
+<td>长长整型</td>
+</tr>
+<tr>
+<td>unsigned long long int</td>
+<td><code>%llu </code></td>
+<td>无符号长长整型</td>
+</tr>
+</tbody></table>
 <p>但我们在输入代码的时候，有时候不想让浮点数输出那么多位，故而有了接下来的占位符的用法：</p>
-<p>|占位符|          |描述|                示例|<br>|————-|——————|——|<br>|<code>%f </code>     |小数点后默认保留 6 位|           123.456000|<br>|<code>%.nf</code>   |小数点后保留 n 位|          %.2f -&gt; 123.46|<br>|<code>%e </code>    |科学计数法，保留 6 位小数（小写）|1.234560e+02|<br>|<code>%E</code>      |科学计数法，保留 6 位小数（大写）|1.234560E+02|<br>|<code>%g</code>     |根据数值大小自动选择|           <code>%f</code> 或 <code>%e</code>123.456 或 1.23e+02|</p>
+<table>
+<thead>
+<tr>
+<th>占位符</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>%f </code></td>
+<td>小数点后默认保留 6 位</td>
+<td>123.456000</td>
+</tr>
+<tr>
+<td><code>%.nf</code></td>
+<td>小数点后保留 n 位</td>
+<td>%.2f -&gt; 123.46</td>
+</tr>
+<tr>
+<td><code>%e </code></td>
+<td>科学计数法，保留 6 位小数（小写）</td>
+<td>1.234560e+02</td>
+</tr>
+<tr>
+<td><code>%E</code></td>
+<td>科学计数法，保留 6 位小数（大写）</td>
+<td>1.234560E+02</td>
+</tr>
+<tr>
+<td><code>%g</code></td>
+<td>根据数值大小自动选择</td>
+<td><code>%f</code> 或 <code>%e</code>123.456 或 1.23e+02</td>
+</tr>
+</tbody></table>
 <p>如果想要左对齐则：<code>%-5d</code>，右对齐如：<code>%5d</code></p>
 <p>然后就是细节：<code>double</code>是<code>lf</code>，那<code>long double</code>该如何书写呢：<br>答案是*<code>Lf</code>，将l大写即可。*</p>
 <h2 id="问题二：关于定义"><a href="#问题二：关于定义" class="headerlink" title="问题二：关于定义"></a>问题二：关于定义</h2><p>如果你用了如下的语句：</p>
@@ -572,7 +643,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-11-26 14:08:02
+                    :</strong> 2024-11-26 14:12:31
             </li>
         
         <li>
