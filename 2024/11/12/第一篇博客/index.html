@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://Dingchangshuo.github.io/my-blog/2024/11/12/“第一篇博客”/"/>
+    <link rel="canonical" href="http://Dingchangshuo.github.io/my-blog/2024/11/12/第一篇博客/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -21,13 +21,15 @@
         <meta name="description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下：    数据类型 占位符 描述    int %d 十进制整数   int %i 十进制整数（与 %d类似）   unsigned int %u 无符号十进制整数   int %o 八进制整数   int %x 十六进制整数（小写字母）   int %X 十六进制整数（大写字母）   float &#x2F; double %f  十进制浮点数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“程序设计实验第二节所遇困处及解决”">
-<meta property="og:url" content="http://dingchangshuo.github.io/my-blog/2024/11/12/%E2%80%9C%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%9D/index.html">
+<meta property="og:url" content="http://dingchangshuo.github.io/my-blog/2024/11/12/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="冲寒">
 <meta property="og:description" content="问题一：关于占位符的使用通常来讲，学习的占位符有如下：    数据类型 占位符 描述    int %d 十进制整数   int %i 十进制整数（与 %d类似）   unsigned int %u 无符号十进制整数   int %o 八进制整数   int %x 十六进制整数（小写字母）   int %X 十六进制整数（大写字母）   float &#x2F; double %f  十进制浮点数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-12T08:59:38.000Z">
-<meta property="article:modified_time" content="2024-11-26T06:12:31.530Z">
+<meta property="article:modified_time" content="2024-11-26T09:14:12.083Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="占位符">
+<meta property="article:tag" content="复数">
 <meta name="twitter:card" content="summary">
     
     
@@ -358,15 +360,15 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/my-blog/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/my-blog/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/my-blog/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -420,13 +422,44 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-26 14:12:31</span>
-            <span class="mobile">2024-11-26 14:12:31</span>
+            <span class="desktop">2024-11-26 17:14:12</span>
+            <span class="mobile">2024-11-26 17:14:12</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/my-blog/categories/C%E8%AF%AD%E8%A8%80/">C语言</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/my-blog/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/">占位符</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/my-blog/tags/%E5%A4%8D%E6%95%B0/">复数</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -609,7 +642,7 @@
 </tr>
 </tbody></table>
 <p>如果想要左对齐则：<code>%-5d</code>，右对齐如：<code>%5d</code></p>
-<p>然后就是细节：<code>double</code>是<code>lf</code>，那<code>long double</code>该如何书写呢：<br>答案是*<code>Lf</code>，将l大写即可。*</p>
+<p>然后就是细节：<code>double</code>是<code>lf</code>，那<code>long double</code>该如何书写呢：<br>答案是*<code>Lf</code><em>，</em>将l大写即可。*</p>
 <h2 id="问题二：关于定义"><a href="#问题二：关于定义" class="headerlink" title="问题二：关于定义"></a>问题二：关于定义</h2><p>如果你用了如下的语句：</p>
 <p><code>scanf_s(&quot;%d&quot;,&amp;b);</code></p>
 <p>那么你的b在定义的时候一定得是一个整形值，不能定义像char类型这样的，否则会造成一些错误。</p>
@@ -643,11 +676,11 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-11-26 14:12:31
+                    :</strong> 2024-11-26 17:14:12
             </li>
         
         <li>
-            <strong>链接:</strong> https://redefine.ohevan.com/2024/11/12/“第一篇博客”/
+            <strong>链接:</strong> https://redefine.ohevan.com/2024/11/12/第一篇博客/
         </li>
         <li>
             <strong>
@@ -665,6 +698,18 @@
             </div>
         
 
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/my-blog/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/">#占位符</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/my-blog/tags/%E5%A4%8D%E6%95%B0/">#复数</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         
@@ -780,7 +825,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 2 篇文章
+                        共撰写了 3 篇文章
                     </span>
                     
                 </p>

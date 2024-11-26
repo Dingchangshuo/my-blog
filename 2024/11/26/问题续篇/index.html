@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="冲寒">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://Dingchangshuo.github.io/my-blog/2024/11/26/问题续篇/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="问题之一：函数的命名：在 C 语言中，函数的命名一般遵循“动词+名词”或“描述性短语”的形式，以便简洁地表达函数的功能。以下是一些常见的命名模式及其英语解释： 数学相关 is_prime - 判断一个数是否为素数（prime number）。 gcd - 计算两个数的最大公约数（Greatest Common Divisor）。 lcm - 计算两个数的最小公倍数（Least Common Mul">
+<meta property="og:type" content="article">
+<meta property="og:title" content="问题续篇">
+<meta property="og:url" content="http://dingchangshuo.github.io/my-blog/2024/11/26/%E9%97%AE%E9%A2%98%E7%BB%AD%E7%AF%87/index.html">
+<meta property="og:site_name" content="冲寒">
+<meta property="og:description" content="问题之一：函数的命名：在 C 语言中，函数的命名一般遵循“动词+名词”或“描述性短语”的形式，以便简洁地表达函数的功能。以下是一些常见的命名模式及其英语解释： 数学相关 is_prime - 判断一个数是否为素数（prime number）。 gcd - 计算两个数的最大公约数（Greatest Common Divisor）。 lcm - 计算两个数的最小公倍数（Least Common Mul">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-26T06:45:54.000Z">
+<meta property="article:modified_time" content="2024-11-26T09:13:30.370Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/my-blog/images/redefine-logo.webp" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/my-blog/images/redefine-logo.webp">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/my-blog/images/redefine-logo.webp">
+    <!--- Page Info-->
+    
+    <title>
+        
+            问题续篇 | DCS Blog
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/my-blog/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/my-blog/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/my-blog/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/my-blog/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/my-blog/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+    
+    
+        
+<script src="/my-blog/js/libs/anime.min.js"></script>
+
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"dingchangshuo.github.io","root":"/my-blog/","language":"zh-CN"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":true,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/11/12 19:02:14"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/my-blog/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/my-blog/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/my-blog/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/my-blog/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+
+    <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    <h2 class="ml13">
+        DCS Blog
+    </h2>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+        var animation = anime.timeline({ loop: true })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [20, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                filter: ['blur(5px)', 'blur(0px)'],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 300 + 20 * i,
+            })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [0, -20],
+                opacity: [1, 0],
+                filter: ['blur(0px)', 'blur(5px)'],
+                easing: "easeInExpo",
+                duration: 1000,
+                delay: (el, i) => 15 * i,
+                complete: function() {
+                    hidePreloader();
+                }
+            }, '-=700');
+
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
+        });
+
+        function hidePreloader() {
+            var preloader = document.querySelector('.preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</div>
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/my-blog/">
+                    <img src="/my-blog/images/redefine-logo.webp" class="w-full h-full rounded-sm">
+                </a>
+            
+            <a class="logo-title" href="/my-blog/">
+                
+                DCS Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/my-blog/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/my-blog/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/my-blog/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/my-blog/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/my-blog/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">问题续篇</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/my-blog/images/abc.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">冲寒</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-26 14:45:54</span>
+        <span class="mobile">2024-11-26 14:45:54</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-11-26 17:13:30</span>
+            <span class="mobile">2024-11-26 17:13:30</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h3 id="问题之一："><a href="#问题之一：" class="headerlink" title="问题之一："></a>问题之一：</h3><p>函数的命名：<br>在 C 语言中，函数的命名一般遵循“动词+名词”或“描述性短语”的形式，以便简洁地表达函数的功能。以下是一些常见的命名模式及其英语解释：</p>
+<h4 id="数学相关"><a href="#数学相关" class="headerlink" title="数学相关"></a>数学相关</h4><ol>
+<li>is_prime - 判断一个数是否为素数（prime number）。</li>
+<li>gcd - 计算两个数的最大公约数（Greatest Common Divisor）。</li>
+<li>lcm - 计算两个数的最小公倍数（Least Common Multiple）。</li>
+<li>factorial - 计算阶乘。</li>
+<li>power - 计算幂次。</li>
+<li>sqrt - 计算平方根（Square Root）。</li>
+<li>abs - 计算绝对值（Absolute Value）。</li>
+<li>is_even - 判断一个数是否为偶数（Even Number）。</li>
+<li>is_odd - 判断一个数是否为奇数（Odd Number）。</li>
+<li>is_perfect_square - 判断一个数是否是完全平方数。</li>
+<li>max - 返回两个数中的较大值。</li>
+<li>min - 返回两个数中的较小值。</li>
+<li>mod - 返回取模结果（Modulo Operation）。</li>
+<li>sum_array - 计算数组的和。</li>
+<li>average - 计算平均值。</li>
+</ol>
+<h4 id="字符串处理相关"><a href="#字符串处理相关" class="headerlink" title="字符串处理相关"></a>字符串处理相关</h4><ol>
+<li>strlen - 计算字符串长度（String Length）。</li>
+<li>strcpy - 复制字符串（String Copy）。</li>
+<li>strcmp - 比较两个字符串（String Compare）。</li>
+<li>strcat - 连接两个字符串（String Concatenation）。</li>
+<li>is_palindrome - 判断一个字符串是否是回文（Palindrome）。</li>
+<li>to_upper - 将字符串转换为大写（To Uppercase）。</li>
+<li>to_lower - 将字符串转换为小写（To Lowercase）。</li>
+<li>reverse_string - 反转字符串。</li>
+<li>count_char - 统计字符串中某个字符的出现次数。</li>
+<li>find_substring - 查找子串（Substring）。</li>
+</ol>
+<h4 id="文件处理相关"><a href="#文件处理相关" class="headerlink" title="文件处理相关"></a>文件处理相关</h4><ol>
+<li>open_file - 打开文件。</li>
+<li>read_file - 读取文件内容。</li>
+<li>write_file - 写入文件内容。</li>
+<li>close_file - 关闭文件。</li>
+<li>get_file_size - 获取文件大小。</li>
+<li>delete_file - 删除文件。</li>
+<li>rename_file - 重命名文件。</li>
+</ol>
+<h4 id="数组与列表相关"><a href="#数组与列表相关" class="headerlink" title="数组与列表相关"></a>数组与列表相关</h4><ol>
+<li>sort_array - 对数组排序。</li>
+<li>find_max - 查找数组中的最大值。</li>
+<li>find_min - 查找数组中的最小值。</li>
+<li>binary_search - 二分查找。</li>
+<li>linear_search - 线性查找。</li>
+<li>reverse_array - 反转数组。</li>
+<li>merge_arrays - 合并两个数组。</li>
+<li>unique_elements - 返回数组中的唯一元素。</li>
+<li>remove_duplicates - 移除数组中的重复元素。<br>10.sum_matrix - 计算矩阵的和。</li>
+</ol>
+<h4 id="系统相关"><a href="#系统相关" class="headerlink" title="系统相关"></a>系统相关</h4><ol>
+<li>exit_program - 退出程序。</li>
+<li>get_time - 获取当前时间。</li>
+<li>set_timeout - 设置超时时间。</li>
+<li>sleep - 让程序等待一段时间。</li>
+</ol>
+<h4 id="位操作相关"><a href="#位操作相关" class="headerlink" title="位操作相关"></a>位操作相关</h4><ol>
+<li>set_bit - 设置某一位为 1。</li>
+<li>clear_bit - 清除某一位（置 0）。</li>
+<li>toggle_bit - 翻转某一位。</li>
+<li>is_power_of_two - 判断是否为 2 的幂。</li>
+<li>count_set_bits - 统计二进制中 1 的数量。</li>
+</ol>
+<h4 id="布尔函数"><a href="#布尔函数" class="headerlink" title="布尔函数"></a>布尔函数</h4><p>这些函数通常以 is_ 开头，用来判断某种条件：</p>
+<ol>
+<li>is_null - 判断是否为空指针。</li>
+<li>is_empty - 判断是否为空（如字符串、数组等）。</li>
+<li>is_sorted - 判断数组是否已排序。</li>
+<li>is_valid - 检查输入是否有效。</li>
+<li>is_divisible - 判断是否可被整除。</li>
+</ol>
+<h4 id="通用工具函数"><a href="#通用工具函数" class="headerlink" title="通用工具函数"></a>通用工具函数</h4><ol>
+<li>swap - 交换两个值。</li>
+<li>print_array - 打印数组内容。</li>
+<li>print_matrix - 打印矩阵。</li>
+<li>init_array - 初始化数组。</li>
+<li>copy_array - 复制数组。</li>
+</ol>
+<h4 id="命名规则建议"><a href="#命名规则建议" class="headerlink" title="命名规则建议"></a>命名规则建议</h4><ol>
+<li>动词+名词：如 sort_array，reverse_string。</li>
+<li>is_ 前缀：表示布尔判断，如 is_even，is_sorted。</li>
+<li>短而精确：尽量避免过长的函数名，保持可读性。</li>
+<li>遵循已有的命名约定：例如 C 标准库的 strlen，strcmp 等。</li>
+</ol>
+<h3 id="第二个问题："><a href="#第二个问题：" class="headerlink" title="第二个问题："></a>第二个问题：</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th><code>scanf(const char *format, ...)</code></th>
+<th><code>gets(char *str)</code></th>
+<th><code>fgets(char *str, int n, FILE *stream)</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>用途</strong></td>
+<td>格式化读取，适合简单数据类型</td>
+<td>读取一整行字符串</td>
+<td>读取一行字符串（指定长度）</td>
+</tr>
+<tr>
+<td><strong>安全性</strong></td>
+<td>不安全（特别是读取字符串）</td>
+<td>不安全，容易导致缓冲区溢出</td>
+<td>安全，限制读取长度</td>
+</tr>
+<tr>
+<td><strong>支持空格</strong></td>
+<td>不支持读取空格后的内容</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td><strong>换行符</strong></td>
+<td>自动丢弃</td>
+<td>丢弃</td>
+<td>保留（需要手动移除）</td>
+</tr>
+<tr>
+<td><strong>灵活性</strong></td>
+<td>较低</td>
+<td>较低</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>常用</td>
+<td>已弃用</td>
+<td>推荐使用</td>
+</tr>
+<tr>
+<td>接下来分别进行举例子：</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ol>
+<li><p>scanf函数</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> num;</span><br><span class="line">    <span class="type">char</span> str[<span class="number">50</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取一个整数</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter an integer: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;num);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取一个字符串（不包含空格）</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter a string (no spaces): &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, str);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;You entered:\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Number: %d\n&quot;</span>, num);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;String: %s\n&quot;</span>, str);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>注意但是，%s不会跳过空白字符，而是直接终止。<br>对于其他格式符号（如 %d、%f 等），scanf 会自动跳过空白字符（空格、换行符、制表符等）</p>
+</li>
+<li><p>gets函数（已弃用，不建议使用）：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> str[<span class="number">50</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取一整行字符串（包括空格）</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter a line of text: &quot;</span>);</span><br><span class="line">    gets(str);  <span class="comment">// 不安全！缓冲区溢出风险</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;You entered: %s\n&quot;</span>, str);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">*gets 可以读取一整行字符串，包括空格，但没有长度限制，非常不安全。*</span><br></pre></td></tr></table></figure></div></li>
+<li><p>fgets函数：<br>fgets 是安全的，因为可以限制读取的长度，同时保留换行符（需要手动去除）。</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str1[<span class="built_in">strcspn</span>(str1, <span class="string">&quot;\n&quot;</span>)] = <span class="string">&#x27;\0&#x27;</span>;<span class="comment">//去掉换行符</span></span><br><span class="line"><span class="comment">//也可以用下面例子中给的方法进行去掉换行符</span></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> str[<span class="number">50</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取一整行字符串（包括空格），最多49个字符（保留1个空间给 &#x27;\0&#x27;）</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter a line of text: &quot;</span>);</span><br><span class="line">    fgets(str, <span class="keyword">sizeof</span>(str), <span class="built_in">stdin</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 去掉换行符（如果存在）</span></span><br><span class="line">    <span class="type">size_t</span> len = <span class="built_in">strlen</span>(str);</span><br><span class="line">    <span class="keyword">if</span> (len &gt; <span class="number">0</span> &amp;&amp; str[len - <span class="number">1</span>] == <span class="string">&#x27;\n&#x27;</span>) &#123;</span><br><span class="line">        str[len - <span class="number">1</span>] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;You entered: %s\n&quot;</span>, str);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>关于为什么是len-1的问题：因为数组是从str[0]开始的。len-1就表示了最后一个字符的内容。</p>
+</li>
+</ol>
+<h3 id="第三个问题："><a href="#第三个问题：" class="headerlink" title="第三个问题："></a>第三个问题：</h3><p>如果求一个数是否为素数，在检测其因数的时候可以取其根来减少筛选次数：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">is_prime</span><span class="params">(<span class="type">int</span> num)</span></span><br><span class="line"> &#123;</span><br><span class="line">    <span class="keyword">if</span> (num &lt;= <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= <span class="built_in">sqrt</span>(num); i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (num % i == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>以上便是一个代码解释。</p>
+<h3 id="第四个问题："><a href="#第四个问题：" class="headerlink" title="第四个问题："></a>第四个问题：</h3><p><em>函数类型省略时则默认为int类型</em></p>
+<h3 id="第五个问题："><a href="#第五个问题：" class="headerlink" title="第五个问题："></a>第五个问题：</h3><p><em>实参的求值顺序是从右到左。</em></p>
+<h3 id="第六个问题："><a href="#第六个问题：" class="headerlink" title="第六个问题："></a>第六个问题：</h3><p>编程序实现字符串连接：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">scat</span><span class="params">(<span class="type">char</span> str1[ ],<span class="type">char</span> str2[ ])</span></span><br><span class="line">&#123; <span class="type">int</span> i=<span class="number">0</span>,k=<span class="number">0</span>;</span><br><span class="line"> <span class="keyword">while</span> (str1[i]!=<span class="string">&#x27;\0&#x27;</span>) i++;</span><br><span class="line"> <span class="keyword">while</span> (str2[k]!=<span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line"> &#123; str1[i]=str2[k];</span><br><span class="line"> i++; k++;</span><br><span class="line"> &#125;</span><br><span class="line"> str1[i]=<span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>这个函数还可以简化：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">scat</span><span class="params">(<span class="type">char</span> str1[],<span class="type">char</span> str2[])</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>,k = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(str[i]!= <span class="number">0</span>) i++;</span><br><span class="line">	<span class="keyword">while</span>(str1[i++] = str2[k++]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="第七个问题："><a href="#第七个问题：" class="headerlink" title="第七个问题："></a>第七个问题：</h3><div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 矩阵转置函数 */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">turn</span><span class="params">(<span class="type">int</span> arra[ ][<span class="number">4</span>],<span class="type">int</span> </span></span><br><span class="line"><span class="params">arrb[ ][<span class="number">3</span>])</span></span><br><span class="line">&#123; <span class="type">int</span> r, c;</span><br><span class="line"> <span class="keyword">for</span> (r=<span class="number">0</span>; r&lt;<span class="number">3</span>;r++)</span><br><span class="line"> <span class="keyword">for</span> (c=<span class="number">0</span>; c&lt;<span class="number">4</span>; c++)</span><br><span class="line"> arrb[c][r]=arra[r][c];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="第八个问题：排序方法"><a href="#第八个问题：排序方法" class="headerlink" title="第八个问题：排序方法"></a>第八个问题：排序方法</h3><ol>
+<li>冒泡排序（Bunnle Sort）</li>
+</ol>
+<h5 id="核心思想："><a href="#核心思想：" class="headerlink" title="核心思想："></a>核心思想：</h5><ul>
+<li>每次遍历数组时，将相邻的两个元素进行比较，如果顺序不对（如升序时前者大于后者），就交换它们。</li>
+<li>每次遍历后，当前未排序部分的最大值（或最小值）会被移动到数组末尾。</li>
+<li>重复此过程，直到整个数组有序。<br>下面是一个代码的举例：<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">bubbleSort</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> n)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - <span class="number">1</span> - i; j++) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) </span><br><span class="line">            &#123;  <span class="comment">// 升序</span></span><br><span class="line">                <span class="type">int</span> temp = arr[j];</span><br><span class="line">                arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">                arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">64</span>, <span class="number">34</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>, <span class="number">90</span>&#125;;</span><br><span class="line">    <span class="type">int</span> n = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">    bubbleSort(arr, n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+优缺点：<br>优点：实现简单；适用于小规模数据。<br>缺点：效率低，时间复杂度为n的平方，无论数组是否部分有序。</li>
+</ul>
+<ol start="2">
+<li>选择排序（Selection Sort）</li>
+</ol>
+<h5 id="核心思想：-1"><a href="#核心思想：-1" class="headerlink" title="核心思想："></a>核心思想：</h5><ul>
+<li>每次从未排序部分中找到最小值（或最大值），并将其放到已排序部分的末尾。</li>
+<li>遍历 n 次，每次将一个元素放到正确位置。<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">selectionSort</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> n)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> minIndex = i;  <span class="comment">// 假设当前索引是最小值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt; n; j++) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &lt; arr[minIndex]) </span><br><span class="line">            &#123;</span><br><span class="line">                minIndex = j;  <span class="comment">// 更新最小值索引</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 交换</span></span><br><span class="line">        <span class="type">int</span> temp = arr[minIndex];<span class="comment">//minIndex的含义是最小值索引</span></span><br><span class="line">        arr[minIndex] = arr[i];</span><br><span class="line">        arr[i] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">64</span>, <span class="number">34</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>, <span class="number">90</span>&#125;;</span><br><span class="line">    <span class="type">int</span> n = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">    selectionSort(arr, n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+优缺点：</li>
+<li>优点:实现简单，元素交换次数少。</li>
+<li>缺点：时间复杂度也是n的平方，即使数组已部分有序，也不能提前终止。</li>
+</ul>
+<ol start="3">
+<li>插入排序（Insertion Sort）</li>
+</ol>
+<h5 id="核心思想：-2"><a href="#核心思想：-2" class="headerlink" title="核心思想："></a>核心思想：</h5><ul>
+<li>将数组分为“已排序”和“未排序”两部分。</li>
+<li>每次从未排序部分取出一个元素，将其插入到已排序部分的正确位置。</li>
+<li>类似于打扑克牌时整理牌的过程。<br>下面是实现代码：<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">insertionSort</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> n)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> key = arr[i];  <span class="comment">// 当前需要插入的元素</span></span><br><span class="line">        <span class="type">int</span> j = i - <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 将比 key 大的元素右移</span></span><br><span class="line">        <span class="keyword">while</span> (j &gt;= <span class="number">0</span> &amp;&amp; arr[j] &gt; key) </span><br><span class="line">        &#123;</span><br><span class="line">            arr[j + <span class="number">1</span>] = arr[j];                             </span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[j + <span class="number">1</span>] = key;  <span class="comment">// 插入到正确位置</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">64</span>, <span class="number">34</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>, <span class="number">90</span>&#125;;</span><br><span class="line">    <span class="type">int</span> n = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">    insertionSort(arr, n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+优缺点：</li>
+<li>优点：<ul>
+<li>对于小规模数组或几乎有序的数组，效率较高。</li>
+<li>时间复杂度为n（最优情况下）。</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>最坏时间复杂度为n的平方。</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>快速排序（Quick Sort）</li>
+</ol>
+<h5 id="核心思想：-3"><a href="#核心思想：-3" class="headerlink" title="核心思想："></a>核心思想：</h5><ul>
+<li>使用“分而治之”的思想：<ul>
+<li>选择一个基准值（pivot），通常选择第一个元素、最后一个元素或中间值。</li>
+<li>将数组分为两部分：“小于基准”的部分和“大于基准”的部分。</li>
+<li>对两部分递归排序。<br>下面是实现代码：<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">quickSort</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> low, <span class="type">int</span> high)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (low &lt; high) &#123;</span><br><span class="line">        <span class="type">int</span> pivotIndex = partition(arr, low, high);</span><br><span class="line">        quickSort(arr, low, pivotIndex - <span class="number">1</span>);  <span class="comment">// 排序左半部分</span></span><br><span class="line">        quickSort(arr, pivotIndex + <span class="number">1</span>, high); <span class="comment">// 排序右半部分</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">partition</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> low, <span class="type">int</span> high)</span> &#123;</span><br><span class="line">    <span class="type">int</span> pivot = arr[high];  <span class="comment">// 基准值</span></span><br><span class="line">    <span class="type">int</span> i = low - <span class="number">1</span>;        <span class="comment">// 较小元素的索引</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = low; j &lt; high; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[j] &lt; pivot) &#123;</span><br><span class="line">            i++;</span><br><span class="line">            <span class="comment">// 交换 arr[i] 和 arr[j]</span></span><br><span class="line">            <span class="type">int</span> temp = arr[i];</span><br><span class="line">            arr[i] = arr[j];</span><br><span class="line">            arr[j] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 将基准值放到正确位置</span></span><br><span class="line">    <span class="type">int</span> temp = arr[i + <span class="number">1</span>];</span><br><span class="line">    arr[i + <span class="number">1</span>] = arr[high];</span><br><span class="line">    arr[high] = temp;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> i + <span class="number">1</span>;  <span class="comment">// 返回基准值的索引</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">64</span>, <span class="number">34</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>, <span class="number">90</span>&#125;;</span><br><span class="line">    <span class="type">int</span> n = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">    quickSort(arr, <span class="number">0</span>, n - <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+优缺点：</li>
+</ul>
+</li>
+<li>优点：<ul>
+<li>平均时间复杂度为nlogn，效率非常高。</li>
+<li>适用于大规模数据排序。</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>最坏时间复杂度为n的平方(如基准值选择不当时）。</li>
+<li>递归调用会占用栈空间，导致空间复杂度较高。<br>总结如下：<table>
+<thead>
+<tr>
+<th>排序算法</th>
+<th>时间复杂度（平均）</th>
+<th>时间复杂度（最坏）</th>
+<th>空间复杂度</th>
+<th>稳定性</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>冒泡排序</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(1)</td>
+<td>稳定</td>
+<td>简单实现，小规模数据</td>
+</tr>
+<tr>
+<td>选择排序</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(1)</td>
+<td>不稳定</td>
+<td>小规模数据，交换次数较少</td>
+</tr>
+<tr>
+<td>插入排序</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(1)</td>
+<td>稳定</td>
+<td>小规模或几乎有序的数组</td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td>O(n log n)</td>
+<td>O(n²)</td>
+<td>O(log n)</td>
+<td>不稳定</td>
+<td>大规模数据，效率高</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> 问题续篇</li>
+        <li><strong>作者:</strong> 冲寒</li>
+        <li><strong>创建于
+                :</strong> 2024-11-26 14:45:54</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-11-26 17:13:30
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://redefine.ohevan.com/2024/11/26/问题续篇/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/my-blog/2024/11/25/%E5%AE%9E%E9%AA%8C%E4%B8%89%E5%9B%9B%E8%AF%B8%E5%A4%9A%E9%97%AE%E9%A2%98/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">实验三四诸多问题</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/my-blog/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">目录</div>
+        <div class="page-title">问题续篇</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E4%B9%8B%E4%B8%80%EF%BC%9A"><span class="nav-text">问题之一：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-text">第二个问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-text">第三个问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-text">第四个问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-text">第五个问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-text">第六个问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="nav-text">第七个问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%85%AB%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%9A%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95"><span class="nav-text">第八个问题：排序方法</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+            <div class="customize-info my-1">无人扶我青云志，我自踏雪至山巅。 倘若命中无此运，孤身亦可登昆仑。
+</div>
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2024</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/my-blog/">冲寒</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 3 篇文章
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
+        </div>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/my-blog/js/libs/Swup.min.js"></script>
+
+<script src="/my-blog/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/my-blog/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/my-blog/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/my-blog/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/my-blog/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/my-blog/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/my-blog/js/utils.js" type="module"></script>
+
+<script src="/my-blog/js/main.js" type="module"></script>
+
+<script src="/my-blog/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/my-blog/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/my-blog/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/my-blog/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/my-blog/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/my-blog/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/my-blog/js/tools/runtime.js"></script>
+
+    
+<script src="/my-blog/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/my-blog/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/my-blog/js/libs/Typed.min.js"></script>
+
+  
+<script src="/my-blog/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="/my-blog/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/my-blog/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/my-blog/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/my-blog/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/my-blog/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+</body>
+</html>
