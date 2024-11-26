@@ -13,20 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://Dingchangshuo.github.io/my-blog/2024/11/12/hello-world/"/>
+    <link rel="canonical" href="http://Dingchangshuo.github.io/my-blog/2024/11/25/实验三四诸多问题/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . Q">
+        <meta name="description" content="###第一个问题：VS2022中不支持变长数组*可以先初始化数组的大小 123456789101112#include &lt;stdio.h&gt;int main() &#123;    float arr[10]&#x3D;&#123;0&#125;, sum &#x3D; 0;    printf(&quot;请输入10个整数：&quot;);    for (int i &#x3D; 0; i &lt; 10; i+">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://dingchangshuo.github.io/my-blog/2024/11/12/hello-world/index.html">
+<meta property="og:title" content="实验三四诸多问题">
+<meta property="og:url" content="http://dingchangshuo.github.io/my-blog/2024/11/25/%E5%AE%9E%E9%AA%8C%E4%B8%89%E5%9B%9B%E8%AF%B8%E5%A4%9A%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="冲寒">
-<meta property="og:description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub . Q">
+<meta property="og:description" content="###第一个问题：VS2022中不支持变长数组*可以先初始化数组的大小 123456789101112#include &lt;stdio.h&gt;int main() &#123;    float arr[10]&#x3D;&#123;0&#125;, sum &#x3D; 0;    printf(&quot;请输入10个整数：&quot;);    for (int i &#x3D; 0; i &lt; 10; i+">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-11-12T08:56:36.062Z">
-<meta property="article:modified_time" content="2024-11-12T08:56:36.062Z">
+<meta property="article:published_time" content="2024-11-25T09:15:14.000Z">
+<meta property="article:modified_time" content="2024-11-26T05:35:18.909Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     
@@ -40,7 +40,7 @@
     
     <title>
         
-            Hello World | DCS Blog
+            实验三四诸多问题 | DCS Blog
         
     </title>
 
@@ -392,7 +392,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Hello World</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">实验三四诸多问题</h1>
                 </div>
             
             </div>
@@ -413,15 +413,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-11-12 16:56:36</span>
-        <span class="mobile">2024-11-12 16:56:36</span>
+        <span class="desktop">2024-11-25 17:15:14</span>
+        <span class="mobile">2024-11-25 17:15:14</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-12 16:56:36</span>
-            <span class="mobile">2024-11-12 16:56:36</span>
+            <span class="desktop">2024-11-26 13:35:18</span>
+            <span class="mobile">2024-11-26 13:35:18</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -448,19 +448,46 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+            <p>###第一个问题：<br>VS2022中不支持变长数组<br>*可以先初始化数组的大小</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> arr[<span class="number">10</span>]=&#123;<span class="number">0</span>&#125;, sum = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入10个整数：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        scanf_s(<span class="string">&quot;%f&quot;</span>, &amp;arr[i]);</span><br><span class="line">        sum += arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;总和: %.2f\n平均值: %.2f\n&quot;</span>, sum, sum / <span class="number">100</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+<p>###第二个问题：<br>数组地址的获取方法：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[<span class="number">3</span>][<span class="number">3</span>] = &#123; &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;, &#123;<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>&#125;, &#123;<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>&#125; &#125;;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;首地址: %p\n&quot;</span>, (<span class="type">void</span>*)arr);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;首地址: %p\n&quot;</span>, (<span class="type">void</span>*)&amp;arr);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;首地址: %p\n&quot;</span>, (<span class="type">void</span>*)arr[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;首地址: %p\n&quot;</span>, (<span class="type">void</span>*)&amp;arr[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;第一行首地址: %p\n&quot;</span>, (<span class="type">void</span>*)arr[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;第二行首地址: %p\n&quot;</span>, (<span class="type">void</span>*)(arr + <span class="number">1</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;第三行首地址: %p\n&quot;</span>, (<span class="type">void</span>*)(&amp;arr[<span class="number">2</span>]));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>数组名就是它的首地址<br>&amp;arr是整个数组的地址<br>arr[0]表示第一行的地址<br>最后的表示第一行首元素的地址</p>
+<p>arr + 1就表示第二行了<br>arr[2]就是第三行地址</p>
+<p>###第三个问题：<br>为了能够正常使用scanf函数，需要在每一次实验项目的属性的预处理器<br>那里加上_CRT_SECURE_NO_WARNINGS</p>
+<p>###第四个问题：</p>
+<blockquote>
+<p>%9s 限制最多读取 9 个字符，并在字符串末尾自动添加空字符 \0，使其成为合法的 C 字符串。<br>fgets(arr, sizeof(arr), stdin)，如果char arr[10]的话，也是限制最多读取九个字符<br>普通的 scanf(“%s”, arr) 不会限制输入的长度，如果用户输入的字符串超出了 arr 的大小，会导致缓冲区溢出，从而引发未定义行为甚至安全漏洞。</p>
+</blockquote>
+<p>###第五个问题：<br>运用函数来获取各种字符的数量：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ctype.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> str[<span class="number">100</span>];</span><br><span class="line">    <span class="type">int</span> letters = <span class="number">0</span>, digits = <span class="number">0</span>, spaces = <span class="number">0</span>, others = <span class="number">0</span>;</span><br><span class="line">    fgets(str, <span class="keyword">sizeof</span>(str), (__acrt_iob_func(<span class="number">0</span>)));</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; str[i]; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">isalpha</span>(str[i]))</span><br><span class="line">            letters++;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">isdigit</span>(str[i]))</span><br><span class="line">            digits++;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">isspace</span>(str[i]))</span><br><span class="line">            spaces++;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            others++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Letters: %d Digits: %d Spaces: %d Others: %d\n&quot;</span>, letters, digits, spaces, others);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>可能会疑问其中的__acrt_iob_func函数是什么意思，下面用一段代码解释它:</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    FILE *input = __acrt_iob_func(<span class="number">0</span>);  <span class="comment">// 获取 stdin</span></span><br><span class="line">    FILE *output = __acrt_iob_func(<span class="number">1</span>); <span class="comment">// 获取 stdout</span></span><br><span class="line">    FILE *error = __acrt_iob_func(<span class="number">2</span>);  <span class="comment">// 获取 stderr</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">fprintf</span>(output, <span class="string">&quot;Hello, World!\n&quot;</span>); <span class="comment">// 等价于 printf</span></span><br><span class="line">    <span class="built_in">fprintf</span>(error, <span class="string">&quot;This is an error message!\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>下面是输出内容：<br>Hello, World!<br>This is an error message!<br>#####实际场景<br>1.隐藏实现细节：通过函数访问全局变量，可以避免直接暴露 FILE 的实现细节，同时支持更多的内部优化。<br>2.兼容性：__acrt_iob_func 提供了一种在新版本运行时库中访问标准流的方法。<br>3.调试符号：如果你在 Visual Studio 调试器中查看 stdin、stdout 或 stderr，可能会看到它们通过 __acrt_iob_func 被解析。<br>#####潜在问题<br>1.不要直接调用 __acrt_iob_func：<br>它是微软的内部实现细节，不属于标准 C 函数，也没有跨平台支持。<br>如果需要标准流，直接使用 stdin、stdout 和 stderr 即可。<br>2.兼容性问题：<br>某些旧的二进制文件或库可能依赖旧版 CRT 的全局变量，而不是新的函数式接口。<br>使用 __acrt_iob_func 时，需确保链接正确版本的运行时库。  </p>
+<p>###第六个问题：<br>制造一个反序的字符串，代码如下：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> len = <span class="built_in">strlen</span>(str);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; i++)</span><br><span class="line">        rev[i] = str[len - <span class="number">1</span> - i];</span><br><span class="line">    rev[len] = <span class="string">&#x27;\0&#x27;</span>; </span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;反序后的字符串: %s\n&quot;</span>, rev)</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+<p>###第七个问题：<br>注意字符串长度的类型为size_t<br>size_t len &#x3D; strlen(str);</p>
+<p>###第八个问题：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (len &gt; <span class="number">0</span> &amp;&amp; str[len - <span class="number">1</span>] == <span class="string">&#x27;\n&#x27;</span>) </span><br><span class="line">   &#123;</span><br><span class="line">       str[len - <span class="number">1</span>] = <span class="string">&#x27;\0&#x27;</span>; <span class="comment">// 去掉换行符</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></div>
+<p>解释以上的代码：<br>这一段代码检查字符串str是否以换行符（\n）结束。如果用户按了回车，fgets 会将换行符包含在字符串中：<br>str[len - 1] &#x3D;&#x3D; ‘\n’：检查字符串的最后一个字符是否是换行符。<br>如果是，替换换行符 \n 为字符串结束符\0，从而去掉了换行符，确保字符串只包含用户输入的内容。</p>
+<p>###第九个问题：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span>* token = strtok(str, <span class="string">&quot; &quot;</span>);</span><br><span class="line"><span class="comment">//这里 token 是指向第一个子字符串的指针</span></span><br></pre></td></tr></table></figure></div>
+<p>调用strtok函数对字符串进行分割：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> * <span class="title function_">strtok</span> <span class="params">( <span class="type">char</span> * str, <span class="type">const</span> <span class="type">char</span> * delimiters )</span>;</span><br><span class="line"><span class="comment">//delimiters的意思是分隔符</span></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (token != <span class="literal">NULL</span>) </span><br><span class="line">   &#123;</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, token);</span><br><span class="line">       token = strtok(<span class="literal">NULL</span>, <span class="string">&quot; &quot;</span>);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<p>为什么 strtok(NULL, “ “)：</p>
+<ul>
+<li>strtok 在第一次调用时，接收一个待分割的字符串，比如strtok(str, “ “)，它会返回第一个由空格分割出的子字符串，并且会将原始字符串中的空格替换成 \0，以表示子字符串的结束。</li>
+<li>为了继续分割同一个字符串，我们在后续的调用中将第一个参数设置为 NULL。这告诉strtok：从上次分割的位置继续操作，而不需要重新指定字符串。</li>
+<li>NULL 告诉 strtok，它应该继续在原始字符串中查找下一个分隔符，然后返回下一个分割出的子字符串。</li>
+<li>我们第一次已经将str字符串给strtok了，故而不需要再给它了，<br>用NULL即可。</li>
+</ul>
+<p>###第十个问题：<br>如何用自定义函数实现strtok的功能：</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 自定义 strtok 函数</span></span><br><span class="line"><span class="type">char</span>* <span class="title function_">my_strtok</span><span class="params">(<span class="type">char</span>* str, <span class="type">const</span> <span class="type">char</span>* delimiter)</span> &#123;</span><br><span class="line">    <span class="type">static</span> <span class="type">char</span>* last = <span class="literal">NULL</span>;  <span class="comment">// 保存上次分割位置</span></span><br><span class="line">    <span class="keyword">if</span> (str != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        last = str;  <span class="comment">// 第一次调用时，初始化 last 指向传入的字符串</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (last == <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;  <span class="comment">// 如果 last 为空，说明已经没有更多的字符串可分割</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">char</span>* start = last;  <span class="comment">// 保存当前字符串开始的位置</span></span><br><span class="line">    <span class="comment">// 寻找第一个分隔符</span></span><br><span class="line">    <span class="keyword">while</span> (*last &amp;&amp; <span class="built_in">strchr</span>(delimiter, *last) == <span class="literal">NULL</span>) &#123;</span><br><span class="line">        last++;  <span class="comment">// 如果当前字符不是分隔符，就继续往后扫描</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (*last == <span class="string">&#x27;\0&#x27;</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> start;  <span class="comment">// 如果扫描到字符串结尾，返回当前部分字符串</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在遇到分隔符时，将其替换为 &#x27;\0&#x27;</span></span><br><span class="line">    *last = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">    last++;  <span class="comment">// 跳过分隔符，准备下一次调用时继续分割</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> start;  <span class="comment">// 返回当前分割的子字符串</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> str[] = <span class="string">&quot;hello world c programming&quot;</span>;</span><br><span class="line">    <span class="type">char</span>* token = my_strtok(str, <span class="string">&quot; &quot;</span>);  <span class="comment">// 第一次调用传入字符串</span></span><br><span class="line">    <span class="keyword">while</span> (token != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, token);  <span class="comment">// 打印当前分割出的子字符串</span></span><br><span class="line">        token = my_strtok(<span class="literal">NULL</span>, <span class="string">&quot; &quot;</span>);  <span class="comment">// 后续调用传入 NULL</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 
         </div>
 
@@ -468,18 +495,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Hello World</li>
+        <li><strong>标题:</strong> 实验三四诸多问题</li>
         <li><strong>作者:</strong> 冲寒</li>
         <li><strong>创建于
-                :</strong> 2024-11-12 16:56:36</li>
+                :</strong> 2024-11-25 17:15:14</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-11-12 16:56:36
+                    :</strong> 2024-11-26 13:35:18
             </li>
         
         <li>
-            <strong>链接:</strong> https://redefine.ohevan.com/2024/11/12/hello-world/
+            <strong>链接:</strong> https://redefine.ohevan.com/2024/11/25/实验三四诸多问题/
         </li>
         <li>
             <strong>
@@ -504,21 +531,21 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
                         href="/my-blog/2024/11/12/%E2%80%9C%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%9D/"
                         >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
                             <span class="title flex justify-center items-center">
                                 <span class="post-nav-title-item">“程序设计实验第二节所遇困处及解决”</span>
-                                <span class="post-nav-item">上一篇</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </span>
                         </a>
                     </div>
-                
                 
             </div>
         
@@ -575,8 +602,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">目录</div>
-        <div class="page-title">Hello World</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <div class="page-title">实验三四诸多问题</div>
+        
 
     </div>
 </div>
